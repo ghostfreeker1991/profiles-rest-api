@@ -31,7 +31,7 @@ class HelloApiView(APIView):
             return Response({'message': message})
         else:
             return Response(
-                serializer.errors, 
+                serializer .errors, 
                 status=status.HTTP_400_BAD_REQUEST
                 )
 
